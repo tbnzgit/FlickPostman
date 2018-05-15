@@ -1,0 +1,83 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Flick",
+		"_postman_id": "34ca0984-f2dc-8308-5d38-dc00f6eaf014",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://api.flick.energy/identity/oauth/token",
+			"request": {
+				"url": "https://api.flick.energy/identity/oauth/token",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "client_id",
+							"value": "le37iwi3qctbduh39fvnpevt1m2uuvz",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "client_secret",
+							"value": "ignwy9ztnst3azswww66y9vd9zt6qnt",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "username",
+							"value": "tim.baker.nz@gmail.com",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "password",
+							"value": "BakHad1972",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.flick.energy/customer/mobile_provider/price",
+			"request": {
+				"url": "https://api.flick.energy/customer/mobile_provider/price",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Host",
+						"value": "api.flick.energy",
+						"description": ""
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Linux; Android 6.0.1; Galaxy Nexus Build/MMB29U; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJSUzUxMiJ9.eyJpc3MiOiJodHRwczovL2lkLmZsaWNrLmVuZXJneSIsInN1YiI6IjMzMDUxYzc2LWFhYzEtNGEwMS1hZDJlLTg0Y2JlZTE4ZWVlMiIsImF1ZCI6MywiZXhwIjoxNTMwNTIwOTQ5LCJhbXIiOltdLCJpYXQiOjE1MjUyNTA1NDl9.HYFJU6N9NiaZl9XF1tj4XJjF-OVNB_wlK70QWOHjLlEcj6q-zChaDyrRmdKG3eMxkRTPpPv2fyXqU7T__vSUh6iF76Wmib3ZHENHu9HH0JX4kIueg9uNJNfER4FKd0COEgsCPoiYZw2u_PPuxeZl7kOhFcS5ueHntm243BZv_z7vESWS-8ezNvJ3LxeAKNUGoJ0_dSPyEKlVdXuGVVKEKepNKs-EJBy-t05Z1EyJwjz7pwABaajosOwqvJ4DJPlqBznR-sGmoe8sNF4QnsTJkCDrtcsQxZq-_owL2O30QCzukDEzR5Pg8j1Y9KHyRAkThFK5-MNtrM1RWJ729kfrnQ",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
